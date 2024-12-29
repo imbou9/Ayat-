@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayat Al Kursi - Récitation et Moments Propices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: "Roboto", sans-serif;
+            margin: 10px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            flex-grow: 1; /* Permet au contenu de prendre tout l'espace possible */
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+
+        .verset {
+            margin-top: 10px;
+        }
+
+        .extra-info {
+            margin-top: 10px;
+            color: #555;
+            font-size: 14px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌟 Ayat Al Kursi - Récitation et Moments Propices 🌟</h1>
+    </header>
+    <main class="container">
+        <section>
+            <h2>🔍 Aperçu général</h2>
+            <p>Ayat al-Kursi (en arabe : آية الكرسي) est le 255e verset de la 2e sourate (intitulée al-Baqara) du Coran.</p>
+            <p>Abu Hurayra a rapporté que l'Envoyé d'Allah (que la paix et les bénédictions d'Allah soient sur lui) a dit :
+            « Dans la sourate « La Vache », il y a un verset [Ayat al-Kursi] qui est le Chef des Versets du Coran, il n’est pas récité dans une maison sans que le démon ne la quitte. » (Rapporté par Al-Hâkim).</p>
+        </section>
+
+        <!-- Verset en arabe, phonétique, traduction -->
+        <section>
+            <h2>📜 Ayat Al Kursi</h2>
+            <div class="buttons">
+                <button id="verset-arabe-button">🕌 Voir en arabe</button>
+                <button id="verset-phonetic-button">🔤 Voir phonétique</button>
+                <button id="verset-traduit-button">📖 Voir traduction française</button>
+            </div>
+            <div id="verset-arabe" class="verset" style="display: none;">
+                <h3>📜 En Arabe :</h3>
+                <p>ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ ۚ لَّهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ</p>
+            </div>
+            <div id="verset-phonetic" class="verset" style="display: none;">
+                <h3>🔤 Phonétique :</h3>
+                <p>Allāhu Lā 'Ilāha 'Illā Huwa Al-Ĥayyu Al-Qayyūmu</p>
+                <p>Lā Ta'khudhuhu Sinatun Wa Lā Nawm</p>
+                <p>Lahu Mā Fī As-Samāwāti Wa Mā Fī Al-'Arđ</p>
+                <p>Man Dhā Al-Ladhī Yashfa`u `Indahu 'Illā Bi'idhnih</p>
+                <p>Ya`lamu Mā Bayna 'Aydīhim Wa Mā Khalfahum</p>
+                <p>Wa Lā Yuĥīṭūna Bishay'in Min `Ilmihi 'Illā Bimā Shā'a</p>
+                <p>Wasi`a Kursīyuhu As-Samāwāti Wa Al-'Arđa Wa Lā Ya'ūduhu Ĥifžuhumā</p>
+                <p>Wa Huwa Al-`Alīyu Al-`Ažīm</p>
+            </div>
+            <div id="verset-traduit" class="verset" style="display: none;">
+                <h3>📖 Traduction Française :</h3>
+                <p>Allah! Point de divinité à part Lui, le Vivant, Celui qui subsiste par lui-même "al-Qayyum".</p>
+                <p>Ni somnolence ni sommeil ne Le saisissent.</p>
+                <p>A lui appartient tout ce qui est dans les cieux et sur la terre.</p>
+                <p>Qui peut intercéder auprès de Lui sans Sa permission ?</p>
+                <p>Il connaît leur passé et leur futur.</p>
+                <p>Et, de Sa science, ils n´embrassent que ce qu´Il veut.</p>
+                <p>Son Trône "Kursiy" déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine.</p>
+                <p>Et Il est le Très Haut, le Très Grand.</p>
+            </div>
+        </section>
+
+        <!-- Moments propices -->
+        <section>
+            <h2>🌅 Moments Propices</h2>
+            <ul id="moment-list"></ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 - Source principale : <a href="https://www.hadithdujour.com" target="_blank">www.hadithdujour.com</a></p>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const moments = [
+                {
+                    text: "1 à 5 : Après les cinq prières obligatoires. 🕌",
+                    detail: "D'après Abou Oumama (qu'Allah l'agrée), le Prophète (que la prière d'Allah et Son salut soient sur lui) a dit: « Celui qui récite ayat al koursi (1) après chaque prière obligatoire, rien ne l'empêche de rentrer dans le paradis sauf la mort (2) »."
+                },
+                {
+                    text: "6 : Durant les invocations du matin. 🌅",
+                    detail: "D'après Oubay Ibn Ka'b (qu'Allah l'agrée) : J'avais une réserve de dattes qui diminuait..."
+                },
+                {
+                    text: "7 : Durant les invocations de l’après-midi. ☀️",
+                    detail: "D'après Oubay Ibn Ka'b (qu'Allah l'agrée) : J'avais une réserve de dattes qui diminuait..."
+                },
+                {
+                    text: "8 : Avant de dormir. 🌙",
+                    detail: "D'après 'Oubeid Ibn 'Amr, 'Ali Ibn Abi Talib (qu'Allah l'agrée) a dit : « Je ne pense pas qu'une personne dotée de raison puisse rentrer dans l'Islam et dormir avant de réciter ayat al koursi »."
+                }
+            ];
+
+            const momentList = document.getElementById("moment-list");
+
+            moments.forEach((moment, index) => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `
+                    <strong>${moment.text}</strong><br>
+                    <em>${moment.detail}</em>
+                    <button onclick="toggleExtraInfo(${index})">🔎 Voir plus</button>
+                    <div class="extra-info" id="extra-info-${index}" style="display: none;">
+                        ${moment.detail}
+                    </div>
+                `;
+                momentList.appendChild(listItem);
+            });
+
+            const button1 = document.getElementById("verset-arabe-button");
+            const button2 = document.getElementById("verset-phonetic-button");
+            const button3 = document.getElementById("verset-traduit-button");
+
+            const versetArabeDiv = document.getElementById("verset-arabe");
+            const versetPhoneticDiv = document.getElementById("verset-phonetic");
+            const versetTraduitDiv = document.getElementById("verset-traduit");
+
+            button1.addEventListener("click", () => {
+                versetArabeDiv.style.display = versetArabeDiv.style.display === "none" ? "block" : "none";
+            });
+
+            button2.addEventListener("click", () => {
+                versetPhoneticDiv.style.display = versetPhoneticDiv.style.display === "none" ? "block" : "none";
+            });
+
+            button3.addEventListener("click", () => {
+                versetTraduitDiv.style.display = versetTraduitDiv.style.display === "none" ? "block" : "none";
+            });
+        });
+
+        // Fonction pour afficher les détails des moments
+        function toggleExtraInfo(index) {
+            const extraInfoDiv = document.getElementById(`extra-info-${index}`);
+            extraInfoDiv.style.display = extraInfoDiv.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
